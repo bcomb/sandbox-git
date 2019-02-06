@@ -1,20 +1,23 @@
-**Fix a Git detached head?**
+Fix a Git detached head?
+=====================
 
 Detached head means you are no longer on a branch, you have checked out a single commit in the history (in this case the commit previous to HEAD, i.e. HEAD^).
 
-##If you want to *delete* your changes associated with the detached HEAD
+If you want to *delete* your changes associated with the detached HEAD
+-------------------
 
-You only need to checkout the branch you were on, e.g. 
+You only need to checkout the branch you were on, e.g.
 
-    git checkout master
+`git checkout master`
 
 Next time you have changed a file and want to restore it to the state it is in the index, don't delete the file first, just do
 
-    git checkout -- path/to/foo
+`git checkout -- path/to/foo`
 
 This will restore the file foo to the state it is in the index. 
 
-##If you want to *keep* your changes associated with the detached HEAD
+If you want to *keep* your changes associated with the detached HEAD
+-------------------
 
 1. Run `git log -n 1`; this will display the most recent commit on the detached HEAD. Copy-and-paste the commit hash.
 2. Run `git checkout master`
