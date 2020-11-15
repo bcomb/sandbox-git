@@ -26,4 +26,4 @@ If you want to *keep* your changes associated with the detached HEAD
 
 Memo
 =====================
-git submodule add https://github.com/nothings/stb.git ThirdParty/stb
+`git submodule add https://github.com/nothings/stb.git ThirdParty/stb`
