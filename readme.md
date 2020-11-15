@@ -23,3 +23,7 @@ If you want to *keep* your changes associated with the detached HEAD
 2. Run `git checkout master`
 3. Run `git branch tmp <commit-hash>`. This will save your changes in a new branch called `tmp`.
 4. If you would like to incorporate the changes you made into `master`, run `git merge tmp` from the `master` branch. You should be on the `master` branch after running `git checkout master`.
+
+Memo
+=====================
+git submodule add https://github.com/nothings/stb.git ThirdParty/stb
